@@ -5,7 +5,7 @@ describe("Parking Lot", function() {
 
       it("Parks your car", function() {
 
-          var park   = main().parking(1);
+          var park   = main().parking(1,346);
 
           expect(park).to.equal("Parked");
     });
@@ -13,7 +13,7 @@ describe("Parking Lot", function() {
 
       it("Unparks your car", function() {
 
-          var unpark   = main().parking(2);
+          var unpark   = main().parking(2,677);
 
           expect(unpark).to.equal("Unparked");
 
@@ -23,7 +23,7 @@ describe("Parking Lot", function() {
 
       it("Checks for wrong input", function() {
 
-          var wopt   = main().parking(4);
+          var wopt   = main().parking(4,677);
 
           expect(wopt).to.equal("Wrong option!");
 
